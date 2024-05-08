@@ -1,0 +1,63 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+:root {
+    --gradient: linear-gradient(90deg, #121414, #181C1C, #272E2E);
+}
+  
+body {
+    font-family: 'Archivo Black', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    line-height: 1.6;
+    color: #333;
+    background: #ddd;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: bg-animation 9s infinite;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+}
+
+  
+@keyframes slide-up {
+    from {
+      transform: translateY(25px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+.gowno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.kurwa {
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    opacity: 0;
+    animation: slide-up 0.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.kurwa:hover {
+    text-decoration: underline;
+}
