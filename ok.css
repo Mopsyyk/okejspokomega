@@ -48,6 +48,8 @@ body {
 }
 
 .kurwa {
+    user-select: none;
+    cursor: pointer;
     color: white;
     border-radius: 5px;
     text-decoration: none;
