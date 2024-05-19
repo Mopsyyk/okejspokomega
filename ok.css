@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    user-select: none;
     align-items: center;
     font-size: 35px;
     line-height: 1.6;
